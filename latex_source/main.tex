@@ -1,0 +1,31 @@
+\RequirePackage[l2tabu,orthodox]{nag}
+\documentclass[headsepline,footsepline,footinclude=false,oneside,fontsize=12pt,paper=a4,listof=totoc,bibliography=totoc]{scrbook}
+
+\input{settings}
+\usepackage{tikz}
+\usetikzlibrary{matrix}
+
+\newcommand*{\getUniversity}{Universite de Bordeaux}
+\newcommand*{\getTitle}{Reversi: Advanced Computer Player}
+\newcommand*{\getAuthor}{Nicolas Neudeck}
+\newcommand*{\getFaculty}{Master CSI}
+\newcommand*{\getSubmissionDate}{22. November 2019}
+\newcommand*{\getSubmissionLocation}{Bordeaux}
+
+\begin{document}
+	
+
+\input{pages/cover}
+
+\mainmatter{}
+
+\input{chapters/01_introduction}
+\input{chapters/02_algo}
+\input{chapters/03_implementation}
+\input{chapters/04_efforts}
+\input{chapters/05_conclusion}
+
+\appendix
+\microtypesetup{protrusion=true}
+\printbibliography
+\end{document}

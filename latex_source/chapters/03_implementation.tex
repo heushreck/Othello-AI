@@ -1,0 +1,53 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\chapter{Implementation}\label{chapter:implementation}
+In this section a hand full of function and extra code will be explained, which helped building the final product.
+\section{Bitboard Approach and Performance}
+A tradeoff must be made between playing fast and playing well. Since the only factor that the computer player uses to choose a move is the backed-up score generated after searching a given number of moves, it can make a better move if it searches further in the future of the game and has more information on which to base a decision. The faster score evaluation is at any level, the deeper a search will be possible. That’s why the fast bitboard were chosen to store the game boards. Bitwise operations on a bitboard to get the next possible moves is undeniable faster than going trough a couple of while loops and evaluating bidimensional arrays. More on the topic in “Bitboard methods for games“ \cite{quteprints85005}. Functions like board\_stable or board\_frontiers, which calculate a certain type of disc on the board rely only on bitwise operations making them fast and efficient.
+\section{Time}
+Time plays a major role when implementing a Reversi AI. Human players don’t want to wait minutes until a move is calculated and when playing against ther AIs there is often a time constraint. In this project a Time constraint for 30 seconds per move calculation was given. To stay within the bounds of the time constraint the recursive minimax tree search needed an extra exit criterium. \newline This was done by defining a MAX\_TIME value in the header and checking if the time has come to exit. The variable timer was initialized with \verb|time_t timer = time(NULL)| at the first call of the minimax function and given as a parameter to the minimax\_help function.\newpage
+\begin{lstlisting}[language=c]
+minimax_help(board_t *board, size_t depth,..., time_t timer){
+	int value = final_heuristic(board, player);
+	if(depth == 0 || (time(NULL) - timer) >= MAX_TIME){
+		return value;
+	}
+	...
+}
+\end{lstlisting}
+It is not intended, that this happens, which is why an appropriate depth is needed. Here is a Mid Game board which has 13 possible moves for black. One of the most time-consuming moves to calculate in the whole game. 
+\begin{Verbatim}[frame=single]
+   A B C D E F G H
+1  O _ _ _ _ _ _ _
+2  _ O _ _ * _ _ _
+3  _ * O X O * _ _
+4  _ * O O X * O _
+5  _ * O X X O * _
+6  _ * O X O X * _
+7  _ * O O O * _ _
+8  _ * _ * * _ _ _
+
+'X' players turn
+\end{Verbatim}
+Here are the seconds it takes with different depths to calculate the best move.
+\begin{center}
+	\begin{tabular}{ | m{3cm} | m{1cm} m{1cm}  m{1cm} m{1cm} m{1cm} m{1cm} |} 
+		\hline
+		Depth & 1 & 2 & 3 & 4 & 5 & 6\\ 
+		\hline
+		Time (in sec.) & 0 & 0 & 0 & 1 & 8 & 94\\ 
+		\hline
+	\end{tabular}
+\end{center}
+A standard depth of 5 was chosen.
+\section{Opponent AIs}\label{subchapter:opponentAI}
+To test the progressively getting better AI, especially in regard to weights, a worthy opponent was needed. A key factor of this opponent was that it’s play style was not deterministic, because then every game looks exactly the same. And testing of how many wins you get over 100 games was either 0 or 100. So, throughout implementation 3 different opponents played against the final product. 
+\subsection{Random}
+The random\_player function implemented in homework 4 returns a random move among the possible ones. It was the first contrahend and actually performed better than the simple score heuristic. But because it’s to random nature, it wasn’t quite fit for meaningful testing. You can never be sure if one AI is really better than another one, just because it player better against the completely random player. And still, the final product loses 1 out of every 70 games to the random player.
+\subsection{Better Random}
+The so called better random player evaluates the score, and any other given heuristic for every possible move. It then choses randomly one of the two with the best values. It basically performs a minimax tree search with depth 0 and a random element at the end. This served as a great adversary until the stable and disc evaluation heuristic were implemented. Then it would lose 100 out of 100 times, and it was impossible to emend the weights, because the “better random” player was just too bad. The reason why the better random player performed worse against the AI is, because the minimax tree search expects the opponent to pick a good move. And while the better random player doesn’t always pick the absolute best move, it doesn’t pick the worst one either like the total random player might.
+\subsection{Random Start}
+The random start player was the last try to get a working opponent which would not be completely random or to bad to play against. Its concept is to start the game with a couple random moves and the after a specific time turn into a good AI. With this method weight calibrations were tested. If a heuristic weight was changed, the AI with new weights would play against the random start one with the old weight values, to check if it would win significantly more games. Unfortunately, this did not turn out the way it was intended, and no massive improvement was made trying to calibrate the weights.
+
+

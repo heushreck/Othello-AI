@@ -1,0 +1,24 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\chapter{Introduction}\label{chapter:introduction}
+Game playing, as one of the most challenging fields of artificial intelligence has received a lot of attention. Games like Reversi, which have proven to fit in well with computer game playing strategies, have spawned a lot of research in this direction.\newline Othello, how Reversi is called in most parts of the world, is a relatively modern game. Its origins lie in England at the end of the nineteenth century but the game as it is known now was set down in Japan as recently as 1971.\cite{OthelloGamePlayer} It hails from the Go family of board games where the primary objective is to capture territory on the board by surrounding the opponent’s pieces.\newline The motto of Reversi is “Easy to learn, difficult to master” and as such it is ideal for computer implementation. A rather simple Reversi Game can be implemented in Java or python, using generic data structure such as bidimensional arrays. But for this project the performance, code quality (robustness, efficiency, bug free, ease of use…) and memory handling had first priority. So, throughout a five-week course at the University of Bordeaux, the game mechanics and rules were implemented in native C. Starting with the build-system and option parser, a board module as well as a file parser were implemented. A bitboard data structure \cite{quteprints85005} for the game board and player module followed. To finish the fully human playable reverse game, the main loop and a random computer player were tackled.
+\begin{Verbatim}[frame=single]
+   A B C D E F G H
+1  _ _ _ _ _ _ _ _
+2  _ _ _ _ _ _ _ _
+3  _ _ _ _ _ _ _ _
+4  _ _ _ O X _ _ _
+5  _ _ _ X O _ _ _
+6  _ _ _ _ _ _ _ _
+7  _ _ _ _ _ _ _ _
+8  _ _ _ _ _ _ _ _
+
+Score: 'X' = 2, 'O' = 2
+
+'X' player's turn.
+Give your move (e.g. 'A5' or 'a5'), press 'q' or 'Q' to quit:
+\end{Verbatim}
+Leading up to this report, which focuses on the further implementation of a game playing artificial intelligence. Artificial intelligence applications in board games have been around as early as the 1950’s, and computer programs have been developed for games including Checkers, Chess, and Go with varying results. Even though numerous computer Reversi players have been designed, and have beaten human world champions, it is not very clear as to how the various Othello heuristics interact \cite{Analysis}. The over 50 years of trying to build the best Reversi AI gave us a lot of research material to work with. Here some of the most useful examples:\cite{LEE199021} \cite{Frankland} \cite{2007} \newline As most game playing programs, the AI’s main components are its search algorithm and its evaluation function.\cite{Caesar} For the search algorithm, a minimax tree search algorithm with alpha-beta pruning up to a given depth was chosen. The evaluation function combines different heuristics with weights depending on the game stage. All in greater detail in chapter \ref{chapter:algo} Algorithms. The chapter \ref{chapter:implementation} Implementation deals with how to implement those algorithms and still have a decent performance. And lastly the Champter \ref{chapter:efforts} Extra Efforts is about assuring code quality and robustness.
+
+

@@ -1,0 +1,378 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{2007}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,uniquepart=base,hash=5581baca915bb05407f4bbdf3dd092d6}{%
+           family={Binkley},
+           familyi={B\bibinitperiod},
+           given={Kevin\bibnamedelima J.},
+           giveni={K\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=abc0400d11569f49b4970ddca3cdaa52}{%
+           family={Seehart},
+           familyi={S\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=008290765f470b98ce6095b69930cc9f}{%
+           family={Hagiwara},
+           familyi={H\bibinitperiod},
+           given={Masafumi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e9c85d9fe7b9ec47006f0c293790d254}
+      \strng{fullhash}{e9c85d9fe7b9ec47006f0c293790d254}
+      \strng{bibnamehash}{e9c85d9fe7b9ec47006f0c293790d254}
+      \strng{authorbibnamehash}{e9c85d9fe7b9ec47006f0c293790d254}
+      \strng{authornamehash}{e9c85d9fe7b9ec47006f0c293790d254}
+      \strng{authorfullhash}{e9c85d9fe7b9ec47006f0c293790d254}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Information and Media Technologies}
+      \field{number}{4}
+      \field{title}{A Study of Artificial Neural Network Architectures for Othello Evaluation Functions}
+      \field{volume}{2}
+      \field{year}{2007}
+      \field{pages}{1129\bibrangedash 1139}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.11185/imt.2.1129
+      \endverb
+    \endentry
+    \entry{quteprints85005}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ce6f895ac0424268bef0881e4166fa82}{%
+           family={Browne},
+           familyi={B\bibinitperiod},
+           given={Cameron\bibnamedelima B.},
+           giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {International Computer Games Association}%
+      }
+      \strng{namehash}{ce6f895ac0424268bef0881e4166fa82}
+      \strng{fullhash}{ce6f895ac0424268bef0881e4166fa82}
+      \strng{bibnamehash}{ce6f895ac0424268bef0881e4166fa82}
+      \strng{authorbibnamehash}{ce6f895ac0424268bef0881e4166fa82}
+      \strng{authornamehash}{ce6f895ac0424268bef0881e4166fa82}
+      \strng{authorfullhash}{ce6f895ac0424268bef0881e4166fa82}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICGA Journal}
+      \field{number}{2}
+      \field{title}{Bitboard methods for games}
+      \field{volume}{37}
+      \field{year}{2014}
+      \field{pages}{67\bibrangedash 84}
+      \range{pages}{18}
+      \verb{urlraw}
+      \verb https://eprints.qut.edu.au/85005/
+      \endverb
+      \verb{url}
+      \verb https://eprints.qut.edu.au/85005/
+      \endverb
+      \keyw{Bitboards,Algorithms,Computer play,Games}
+    \endentry
+    \entry{OthelloGamePlayer}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=4a984ed673202eea2d010e57d7ddafd3}{%
+           family={Currie},
+           familyi={C\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a984ed673202eea2d010e57d7ddafd3}
+      \strng{fullhash}{4a984ed673202eea2d010e57d7ddafd3}
+      \strng{bibnamehash}{4a984ed673202eea2d010e57d7ddafd3}
+      \strng{authorbibnamehash}{4a984ed673202eea2d010e57d7ddafd3}
+      \strng{authornamehash}{4a984ed673202eea2d010e57d7ddafd3}
+      \strng{authorfullhash}{4a984ed673202eea2d010e57d7ddafd3}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Othello Game Player}
+      \field{urlday}{20}
+      \field{urlmonth}{11}
+      \field{urlyear}{2019}
+      \field{year}{1997}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.103.494
+      \endverb
+      \verb{url}
+      \verb http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.103.494
+      \endverb
+    \endentry
+    \entry{Caesar}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ec130f609acac8cff3029173c1bb2582}{%
+           family={Deshwal},
+           familyi={D\bibinitperiod},
+           given={Priyendra\bibnamedelima S.},
+           giveni={P\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec130f609acac8cff3029173c1bb2582}
+      \strng{fullhash}{ec130f609acac8cff3029173c1bb2582}
+      \strng{bibnamehash}{ec130f609acac8cff3029173c1bb2582}
+      \strng{authorbibnamehash}{ec130f609acac8cff3029173c1bb2582}
+      \strng{authornamehash}{ec130f609acac8cff3029173c1bb2582}
+      \strng{authorfullhash}{ec130f609acac8cff3029173c1bb2582}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Caesar-An Othello Program}
+      \field{year}{2003}
+    \endentry
+    \entry{Frankland}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=1d15d6ac1b70a99216d58511185a0cc1}{%
+           family={Frankland},
+           familyi={F\bibinitperiod},
+           given={Clive},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ffa9b8aa290f35ab81dd3d024e9bfe87}{%
+           family={Pillay},
+           familyi={P\bibinitperiod},
+           given={Nelishia},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Stellenbosch, South Africa}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{2d150ca0792fd6d2e0240d835731e7e5}
+      \strng{fullhash}{2d150ca0792fd6d2e0240d835731e7e5}
+      \strng{bibnamehash}{2d150ca0792fd6d2e0240d835731e7e5}
+      \strng{authorbibnamehash}{2d150ca0792fd6d2e0240d835731e7e5}
+      \strng{authornamehash}{2d150ca0792fd6d2e0240d835731e7e5}
+      \strng{authorfullhash}{2d150ca0792fd6d2e0240d835731e7e5}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2015 Annual Research Conference on South African Institute of Computer Scientists and Information Technologists}
+      \field{isbn}{978-1-4503-3683-3}
+      \field{series}{SAICSIT '15}
+      \field{title}{Evolving Game Playing Strategies for Othello Incorporating Reinforcement Learning and Mobility}
+      \field{year}{2015}
+      \field{pages}{16:1\bibrangedash 16:9}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1145/2815782.2815809
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.acm.org/10.1145/2815782.2815809
+      \endverb
+      \verb{url}
+      \verb http://doi.acm.org/10.1145/2815782.2815809
+      \endverb
+      \keyw{Genetic programming,Othello,board games,game-playing,heuristics}
+    \endentry
+    \entry{HeuristicEvaluation}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d434a1c4ee4071df990f4777b9d99d0a}{%
+           family={Kukreja},
+           familyi={K\bibinitperiod},
+           given={Kartik},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d434a1c4ee4071df990f4777b9d99d0a}
+      \strng{fullhash}{d434a1c4ee4071df990f4777b9d99d0a}
+      \strng{bibnamehash}{d434a1c4ee4071df990f4777b9d99d0a}
+      \strng{authorbibnamehash}{d434a1c4ee4071df990f4777b9d99d0a}
+      \strng{authornamehash}{d434a1c4ee4071df990f4777b9d99d0a}
+      \strng{authorfullhash}{d434a1c4ee4071df990f4777b9d99d0a}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Heuristic/Evaluation Function for Reversi/Othello}
+      \field{urlday}{20}
+      \field{urlmonth}{11}
+      \field{urlyear}{2019}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://kartikkukreja.wordpress.com/2013/03/30/heuristic-function-for-reversiothello/
+      \endverb
+      \verb{url}
+      \verb https://kartikkukreja.wordpress.com/2013/03/30/heuristic-function-for-reversiothello/
+      \endverb
+    \endentry
+    \entry{LEE199021}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=430a3df67954e4fbe36545f1934d6aa5}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Kai-Fu},
+           giveni={K\bibinithyphendelim F\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1e80ce0530cbeb5518120e43d22bd439}{%
+           family={Mahajan},
+           familyi={M\bibinitperiod},
+           given={Sanjoy},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5590e0517382ad51e3cb299585b1fcf8}
+      \strng{fullhash}{5590e0517382ad51e3cb299585b1fcf8}
+      \strng{bibnamehash}{5590e0517382ad51e3cb299585b1fcf8}
+      \strng{authorbibnamehash}{5590e0517382ad51e3cb299585b1fcf8}
+      \strng{authornamehash}{5590e0517382ad51e3cb299585b1fcf8}
+      \strng{authorfullhash}{5590e0517382ad51e3cb299585b1fcf8}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0004-3702}
+      \field{journaltitle}{Artificial Intelligence}
+      \field{number}{1}
+      \field{title}{The development of a world class Othello program}
+      \field{volume}{43}
+      \field{year}{1990}
+      \field{pages}{21\bibrangedash 36}
+      \range{pages}{16}
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/000437029090068B
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/000437029090068B
+      \endverb
+    \endentry
+    \entry{BrianRose}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=1be9ccd95b2cce117fabb24f487b8f69}{%
+           family={Rose},
+           familyi={R\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{1be9ccd95b2cce117fabb24f487b8f69}
+      \strng{fullhash}{1be9ccd95b2cce117fabb24f487b8f69}
+      \strng{bibnamehash}{1be9ccd95b2cce117fabb24f487b8f69}
+      \strng{authorbibnamehash}{1be9ccd95b2cce117fabb24f487b8f69}
+      \strng{authornamehash}{1be9ccd95b2cce117fabb24f487b8f69}
+      \strng{authorfullhash}{1be9ccd95b2cce117fabb24f487b8f69}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Othello - A Minute to Learn... A Lifetime to Master}
+      \field{urlday}{20}
+      \field{urlmonth}{11}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.ffothello.org/livres/othello-book-Brian-Rose.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.ffothello.org/livres/othello-book-Brian-Rose.pdf
+      \endverb
+    \endentry
+    \entry{Analysis}{online}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=771d9c771cd7e2386820335107565ca4}{%
+           family={Sannidhanam},
+           familyi={S\bibinitperiod},
+           given={Vaishnavi},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=62be37f68a3cac1b50e108786a0c5ace}{%
+           family={Annamalai},
+           familyi={A\bibinitperiod},
+           given={Muthukaruppan},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a472dd8bd813be78af66d3270d08f8b}
+      \strng{fullhash}{4a472dd8bd813be78af66d3270d08f8b}
+      \strng{bibnamehash}{4a472dd8bd813be78af66d3270d08f8b}
+      \strng{authorbibnamehash}{4a472dd8bd813be78af66d3270d08f8b}
+      \strng{authornamehash}{4a472dd8bd813be78af66d3270d08f8b}
+      \strng{authorfullhash}{4a472dd8bd813be78af66d3270d08f8b}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{An Analysis of Heuristics in Othello}
+      \field{urlday}{20}
+      \field{urlmonth}{11}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.scribd.com/document/353439817/An-Analysis-of-Heuristics-in-Othello
+      \endverb
+      \verb{url}
+      \verb https://de.scribd.com/document/353439817/An-Analysis-of-Heuristics-in-Othello
+      \endverb
+    \endentry
+    \entry{OthelloImplementation}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=43cf19c9e9341b5f01b187c2ec2281e2}{%
+           family={Wierman},
+           familyi={W\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{43cf19c9e9341b5f01b187c2ec2281e2}
+      \strng{fullhash}{43cf19c9e9341b5f01b187c2ec2281e2}
+      \strng{bibnamehash}{43cf19c9e9341b5f01b187c2ec2281e2}
+      \strng{authorbibnamehash}{43cf19c9e9341b5f01b187c2ec2281e2}
+      \strng{authornamehash}{43cf19c9e9341b5f01b187c2ec2281e2}
+      \strng{authorfullhash}{43cf19c9e9341b5f01b187c2ec2281e2}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Othello implementation}
+      \field{urlday}{20}
+      \field{urlmonth}{11}
+      \field{urlyear}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://pressibus.org/ataxx/autre/minimax/node3.html
+      \endverb
+      \verb{url}
+      \verb http://pressibus.org/ataxx/autre/minimax/node3.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

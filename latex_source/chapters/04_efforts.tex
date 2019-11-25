@@ -1,0 +1,31 @@
+% !TeX root = ../main.tex
+% Add the above to each chapter to make compiling the PDF easier in some editors.
+
+\chapter{Extra Efforts}\label{chapter:efforts}
+The priority of this project lied admittedly on the performance and getting the algorithms to work. With more time, more effort could be made towards code quality or modularity.
+\section{Code Quality}
+That doesn’t mean no efforts were made in view of code quality. After all the code has to run bug free, produce no memory leak or corruption and stand up to the code styling guidelines.
+\subsubsection{GDB}
+GDB (Gnu Debugger) is a powerful debugging tool for both C and C++. A debugger is a program that helps you find bugs by letting you examine the state of the program as it's running. Its way more powerful than used in this project. Its sole use case was to check where the segmentation fault takes place in the code, if one occurred. In hindsight a couple of time a debugger would have been more powerful than primitive debugging print statements, and in future GDB will be a bigger priority. But in this project a lot of the development time was spent on paper coming up or understanding the algorithms. Once they were understood the implementation ran rather smoothly.  
+\subsubsection{Valgrind}
+Valgrind is a multipurpose code profiling and memory debugging tool for the programing language C in Linux. In this project it was used to seek out any memory leaks or corruptions.\newline The command \verb|valgrind –leak-check=full –track-origins_yes ./reversi| and trying out every thinkable game scenario, the memory handling should be on point.
+\subsubsection{clang-tidy}
+clang-tidy is a clang-based C/C++ “linter” tool. Its purpose is to provide an extensible framework for diagnosing and fixing typical programming errors, like style violations, interface misuse, or bugs that can be deduced via static analysis. It was supposed to fix all style guideline violations in this project. For example, adding a space in front of else statements if there is none between the “\}” and the else. Unfortunately, the documentation was too complicated/ reader unfriendly to make out what to change in the style section to apply it to the right guidelines that were given for this project. With more time to get the installation and set up right this would have saved time which was now used to search through the code manually. It really sounds like a good tool and in future projects this will for sure find its use, just for this project it was too late.
+\section{Performance}
+Several small performance improvements have been made. The performance was tested one and the same mid game board with the <time.h> header as a measurement. A \verb|time_t timer = time(NULL)| was initialized before the minimax tree search call and \verb|(timer – time(NULL))| was printed out after the move was calculated to check how long (in seconds) it took.\newline One example of a performance improvement, which saved several seconds on a depth=6 tree search was to check if stable discs are possible in this stage of the game. Before calculating how many stable discs a player has in comparison to his opponent, a check is stable discs are possible is executed. The way the stability heuristic \ref{stable} is implemented, no stable piece can be found before a corner square is occupied. So the \verb|bool check_stable_is_possible(board_t *board)| function checks if either player has a disc in at least one of the corners.
+\begin{lstlisting}[language=c]
+bool check_stable_is_possible(board_t *board){
+	return (bitboard_popcount((board->white | board->black) & 
+		stable_check) > 0);
+}
+\end{lstlisting}
+The bitboard stable\_check is a global variable and gets initialized once at the beginning of the game.
+\begin{lstlisting}[language=c]
+bitboard stable_check = 1;
+stable_check = stable_check << (board->size - 1);
+stable_check += 1;
+stable_check = stable_check << (((board->size - 2) * board->size) + 1);
+stable_check += 1;
+stable_check = stable_check << (board->size - 1);
+stable_check += 1;
+\end{lstlisting}
